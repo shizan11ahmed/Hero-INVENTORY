@@ -220,7 +220,7 @@ export default function App() {
           <option>Scooter</option>
         </select>
         <label style={{display:'flex', alignItems:'center', gap:8, border:'1px solid #e5e7eb', borderRadius:12, padding:'0 8px'}}>
-          Low stock <
+          Low stock &lt;
           <input type="number" min="1" value={lowStockThreshold} onChange={e=>setLowStockThreshold(Number(e.target.value)||1)} style={{width:60, padding:8, border:'none', outline:'none'}} />
         </label>
       </div>
