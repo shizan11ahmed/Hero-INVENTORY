@@ -88,7 +88,7 @@ export default function App() {
     const f = new FormData(e.currentTarget)
     const qty = Number(f.get('quantity') || 0)
     const photos = []
-    if (f.get('photo') and f.get('photo').size>0) {
+    if (f.get('photo') && f.get('photo').size > 0) {
       const file = f.get('photo')
       const path = `photos/${auth.currentUser.uid}/${Date.now()}-${file.name}`
       const url = await uploadPhoto(file, path)
